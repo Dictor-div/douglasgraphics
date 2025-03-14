@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< Updated upstream
     <title>douglasgraphics</title>
+=======
+    <title>dictor.olame-personal-web</title>
+>>>>>>> Stashed changes
     <link rel="icon" type="image/x-icon" href="favicon.ico.png">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/5485a8e8c8.js" crossorigin="anonymous"></script>
@@ -12,7 +16,9 @@
     <div id="header">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <div class="container">
+           
             <nav class="container">
+<<<<<<< Updated upstream
                 <img src="Douglas Graphics logo.png" class="logo">
                 <ul id="sidemenu">
                     <li><a href="#header"> Home</a></li>
@@ -27,8 +33,37 @@
                  
                  
         </div>
+=======
+                <img src="perfectlogo.png" class="logo">
+                
+              
+            
+                  <ul id="sidebar">
+                    <li><a href="#header"> Home</a></li>
+                    <li class="hideOnMobile"><a href="#about"> About</a></li>
+                    <li class="hideOnMobile"><a href="#Services"> Services</a></li>
+                    <li class="hideOnMobile"><a href="#portfolio"> Portfolio</a></li>
+                    <li class="hideOnMobile"><a href="#contact"> Contact</a></li>
+                </ul>
+            </nav>
+            
+            <section class=" home" id="home">
+            <div class="header">
+                <h1>Hey, I am<span> Dictor</span><br> Olame From Kerker, Sudan</h1> 
+                <p>Content Creator, Graphic Design, Data Analyst & <br> Web Developer</p>
+                 
+                 
+        </div>
+        
+       
+        <div class="home-img">
+            <img src="about22.png">
+        </div>
+>>>>>>> Stashed changes
     </section>
     </div>
+    </div>
+    
     <!----------------------about-------------------------->
     <div id="about">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -350,6 +385,15 @@
   })
       .catch(error => console.error('Error!', error.message))
   })
+function showsidebar(){
+    const sidebar =document.querySelector('.sidebar')
+    sidebar.style.display='flex'
+}
+function hideSidebar(){
+     const sidebar =document.querySelector('.sidebar')
+    sidebar.style.display='none'
+}
+ 
 </script>
 
 </body>
