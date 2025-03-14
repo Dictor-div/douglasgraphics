@@ -28,13 +28,23 @@ nav{
     justify-content: space-between;
     padding: 10px 0;
     z-index: 1;
-    position: fixed;
+    position:0;
     top: -50;
     left: 0;
     overflow-x: hidden;
     padding-top: 16px;
     transition: top 0.3s;
 
+}
+.nav:hover{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #e21212c4;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
 }
 .logo{
     width: 180px;
@@ -45,6 +55,12 @@ nav ul{
     width: 100%;
     text-align: right;
     padding-right: 60px;
+    background-color: #a72727;
+
+}
+nav ul:hover{
+    background: #e21212c4;
+    transition: 0.5s;
 }
 nav ul li{
     display: inline-block;
@@ -56,22 +72,6 @@ nav ul li a{
     font-size: 20px;
     
 }
-.btn4{
-    display: flex;
-    padding: 10px 20px;
-    border: 0;
-    outline: 0;
-    border-radius: 6px;
-    background: #a72727;
-    color: #fff;
-    font-weight: 500;
-    cursor: pointer;
-}
-.btn4 img{
-    width: 20px;
-    margin-right:10px ;
-    color: #fff;
-}
 .content{
     margin-top: 14%;
     color: #fff;
@@ -80,13 +80,13 @@ nav ul li a{
 .content h1{
     font-size: 70px;
     font-weight: 600;
-    
     align-items: center;
     text-align: center;
 }
 .content h2{
     text-align: center;
     font-size: 40PX;
+    align-items: center;
 }
 
 /*----------------------about-----------------------*/
@@ -117,8 +117,9 @@ flex-basis: 35%;
 .about-col-2{
 flex-basis: 60%;
 
-
-
+}
+.about-col-2 h2{
+    font-family: Segoe Script;
 }
 .sub-title{
     font-size: 60px;
