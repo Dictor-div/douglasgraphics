@@ -76,14 +76,17 @@ nav ul li a{
     margin-top: 14%;
     color: #fff;
     max-width: 620px;
-    position: c;
-
 }
 .content h1{
     font-size: 70px;
     font-weight: 600;
-    line-height: 85px;
-    margin-bottom: 25px;
+    
+    align-items: center;
+    text-align: center;
+}
+.content h2{
+    text-align: center;
+    font-size: 40PX;
 }
 
 /*----------------------about-----------------------*/
