@@ -12,13 +12,12 @@ body{
     background-color: #262626; 
     color: #fff;
     min-height: 100vh;
-<<<<<<< Updated upstream
+
    
 
-=======
->>>>>>> Stashed changes
+
 }
-<<<<<<< HEAD
+
 
 #header{
     width: 100%;
@@ -34,8 +33,7 @@ body{
 }
 .container{
     padding: 30px 10%;
-    
-=======
+}
 .container1{
     width: 100%;
     min-height: 100vh;
@@ -43,14 +41,13 @@ body{
     background-size: cover;
     background-position: center;
     padding: 10px 9%;
->>>>>>> f1ae94f260e25c2b905dc95b885e17e7ac68600b
 }
 nav{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-<<<<<<< HEAD
+
     flex-wrap: wrap;
     background: #2ddf0e;
     border-radius: 10px;
@@ -64,12 +61,10 @@ nav{
 }
 .logo{
     width: 100px;
-=======
     padding: 10px 0;
 }
 .logo{
     width: 180px;
->>>>>>> f1ae94f260e25c2b905dc95b885e17e7ac68600b
     cursor: pointer;
 }
 nav ul{
@@ -79,27 +74,26 @@ nav ul{
     padding-right: 60px;
 }
 nav ul li{
-<<<<<<< HEAD
+
    display: inline-block; 
    list-style: none;
    margin:10px 20px;
    color: #fff;
-  
 
 }
 nav ul li a{
     color:  #fff;;
-=======
+
     display: inline-block;
     margin: 10px 20px;
 }
 nav ul li a{
     color: #fff;
->>>>>>> f1ae94f260e25c2b905dc95b885e17e7ac68600b
+
     text-decoration: none;
 
 }
-<<<<<<< HEAD
+
 nav ul li a::after{
     content: '';
     width: 0%;
@@ -160,7 +154,7 @@ nav ul li a:hover::after{
     color: transparent;
     
 }
-=======
+
 .btn{
   display: flex;
   align-items: center;
@@ -180,7 +174,7 @@ nav ul li a:hover::after{
     width: 20px;
     margin-right: 10px;
 }
->>>>>>> f1ae94f260e25c2b905dc95b885e17e7ac68600b
+
 /*----------------------about-----------------------*/
 #about{
     padding: 80px 0;
