@@ -34,34 +34,27 @@ nav{
     overflow-x: hidden;
     padding-top: 16px;
     transition: top 0.3s;
+    
 
-}
-.nav:hover{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #e21212c4;
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    transition: 0.5s;
 }
 .logo{
     width: 180px;
     cursor: pointer;
+    height: 50%;
+    width: 10%;
 }
 nav ul{
     list-style: none;
     width: 100%;
     text-align: right;
     padding-right: 60px;
-    background-color: #a72727;
+}
+nav ul{
+    background: #2ddf0e;
+    height: 50%;
+    border-radius: 40px;
+}
 
-}
-nav ul:hover{
-    background: #e21212c4;
-    transition: 0.5s;
-}
 nav ul li{
     display: inline-block;
     margin: 10px 20px;
@@ -70,26 +63,46 @@ nav ul li a{
     color: #fff;
     text-decoration: none;
     font-size: 20px;
+    position: relative;
     
 }
-.content{
-    margin-top: 14%;
-    color: #fff;
-    max-width: 620px;
+ nav ul li a::after{
+    content: '';
+    width: 1005;
+    height: 3PX;
+    background: #a72727;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
 }
-.content h1{
-    font-size: 70px;
-    font-weight: 600;
-    align-items: center;
-    text-align: center;
+nav ul li a:hover::after{
+    width: 100%;
+    
 }
-.content h2{
-    text-align: center;
-    font-size: 40PX;
-    align-items: center;
-}
+.header h1 {
+align-items: center;
+text-align: center;
+font-size: 60px;
+font-weight: 800;
 
-/*----------------------about-----------------------*/
+}
+.header h2{
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    
+}
+.header h4{
+    align-items: center;
+    text-align: center;
+    font-size: 35px;
+}
+.header span{
+    color: #61b752;
+}
+----------------------about-----------------------*/
 #about{
     padding: 80px 0;
     color: #fff;
