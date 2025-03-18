@@ -316,12 +316,13 @@ flex-basis: 60%;
 /*-------------Contact----------------*/
 .contact-left{
 flex-basis: 35%;
-background-color: #262626;
+background-color:black;
 margin-left: 3rem;
 color: #fff;
 }
 .contact-right{
     flex-basis: 60%;
+    background-color: black;
     
     
     }
