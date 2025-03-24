@@ -9,14 +9,13 @@ html{
     
 }
 body{
-    background-color: #262626; 
+    background-color: #0f0f10dd;
     color: #fff;
     min-height: 100vh;
 }
 .container1{
     width: 100%;
     min-height: 100vh;
-    background-image: linear-gradient(rgba(9,0,77,0.65),rgba(9,0,77,0.65)),url(my\ home\ header.png);
     background-size: cover;
     background-position: center;
     padding: 10px 8%;
@@ -34,36 +33,44 @@ nav{
     overflow-x: hidden;
     padding-top: 16px;
     transition: top 0.3s;
-    
-
+    height: 20%;
+    background-color: #575757;
+    height: 70PX;
 }
 .logo{
     width: 180px;
     cursor: pointer;
-    height: 50%;
-    width: 10%;
+    height: 120px;
+    margin-top: 2px;
+   
+   
 }
 nav ul{
     list-style: none;
     width: 100%;
-    text-align: right;
+    text-align: center;
     padding-right: 60px;
-}
-nav ul{
-    background: #2ddf0e;
-    height: 50%;
-    border-radius: 40px;
+   
+   
+
 }
 
 nav ul li{
     display: inline-block;
     margin: 10px 20px;
+    color: #2ddf0e;
+    border-radius: 20%;
+    
+    
 }
 nav ul li a{
-    color: #fff;
+    color: #4ad015;
     text-decoration: none;
     font-size: 20px;
     position: relative;
+   
+
+ 
     
 }
  nav ul li a::after{
@@ -75,16 +82,29 @@ nav ul li a{
     left: 0;
     bottom: -6px;
     transition: 0.5s;
+    box-shadow: inset;
 }
 nav ul li a:hover::after{
     width: 100%;
     
+}
+.header{
+    background-image: url(my\ home\ header.png);
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 10px 1px;
+
+    
+
 }
 .header h1 {
 align-items: center;
 text-align: center;
 font-size: 60px;
 font-weight: 800;
+margin-top: 20%;
 
 }
 .header h2{
@@ -102,17 +122,21 @@ font-weight: 800;
 .header span{
     color: #61b752;
 }
-----------------------about-----------------------*/
+/*----------------------about-----------------------*/
 #about{
     padding: 80px 0;
     color: #fff;
     background-color: black;
+   
+ 
     
 }
 .row{
 display: flex;
 justify-content: space-between;
 flex-wrap: wrap;
+
+
 
 }
 .about-col-1{
@@ -139,6 +163,7 @@ flex-basis: 60%;
     font-weight: 600;
     color: #fff;
     margin-top: 30px;
+    text-decoration: dashed;
     
 }
 .tab-titles{
@@ -185,18 +210,25 @@ flex-basis: 60%;
 /*----------------services-------------*/
 #Services{
     padding: 30px 0;
-    background-color: #262626;
+    background-color: #0f0f10dd;
     color: #fff;
     align-items: center;
+    box-shadow: #a72727;
+   
 
 }
 .Services-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
-    margin-top: 50px;
+    margin-top: 40px;
     margin-left: 2rem;
+    
+   
 
+}
+.sub-title{
+    margin-top: 10%;
 }
 .Services-list div{
     background: black;
@@ -205,6 +237,7 @@ flex-basis: 60%;
     font-weight: 300;
     border-radius: 16px;
     transition: background 0.5s, transform 0.5s;
+    margin-top: 20%;
 
 }
 .Services-list div i{
@@ -216,6 +249,7 @@ flex-basis: 60%;
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
+  
 
 }
 .Services-list div a{
@@ -319,24 +353,26 @@ flex-basis: 35%;
 background-color:black;
 margin-left: 3rem;
 color: #fff;
+
+
 }
+
 .contact-right{
     flex-basis: 60%;
     background-color: black;
+  
+  
     
-    
-    }
-    .contact-left p{
-        margin-top: 30px;
-
-    }
+ }
+ 
     .contact-left p i{
         color: #e21212c4;
         margin-right: 15px;
         font-size: 25px;
+        margin-top: 10%;
     }
     .social-icons{
-        margin-top: 30px;
+        margin-top: 10%;
     }
     .social-icons a{
         text-decoration: none;
@@ -356,6 +392,7 @@ color: #fff;
     }
     .contact-right form{
         width: 100%;
+       
 
     }
     form input, form textarea{

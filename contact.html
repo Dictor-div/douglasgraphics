@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>douglasgraphics</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico.png">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5485a8e8c8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <img src="Douglas Graphics logo.png" class="logo">
+        <ul>
+            <li><a href="header.html"></i>Home</a></li>
+            <li><a href="about.html" ></i>About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html"></i>My Potfolio</a></li>
+            <li><a href="Contact.html">Contact Me</a></li>
+        </ul>
+        
+    </nav>
+<!-------------------------Contact------------------------->
+<div id="Contact">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>douglasdictor409@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone-flip"></i>+254748225353</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/dictorsanja.abdallah"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/dictor-olame-5b9632275/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://x.com/OlameDicto26034"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/olamedictor37/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/Dictor-div"><i class="fa-brands fa-github"></i></i></a>
+                    <a href="https://www.youtube.com/@user-oh6bv9ox5q"><i class="fa-brands fa-youtube"></i></a> 
+                    <a href="https://www.tiktok.com/@dictor.olame"><i class="fa-brands fa-tiktok"></i></a> 
+                    <a href="https://www.pinterest.com/douglasdictor/"><i class="fa-brands fa-pinterest"></i></a> 
+                </div>
+                
+                <a href="MY CURRICULUM VITAE.pdf"Download class="btn btn2">Download CV</a>
+
+            </div>
+            <div class="contact-right">   
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <a href="#header">
+            <img src="Douglas Graphics logo.png" class="logo">
+        </a>
+        <div class=" footer">
+        <ul  id="sidemenu">
+            <li><a href="#header"> Home</a></li>
+            <li><a href="#about"> About</a></li>
+            <li><a href="#Services"> Services</a></li>
+            <li><a href="#portfolio"> Portfolio</a></li>
+            <li><a href="#contact"> Contact</a></li>
+        </div>
+        </ul>
+        <p>Copyright &copy; Dictor Olame. Made for <i class="fa-solid fa-heart"></i> Personal Use and professional  only</p>
+       
+    </div>
+</div>
+ 
+    </script>
+    <script>
+        var tablinks = document.getElementsByClassName ("tab-links");
+        var tabcontents = document.getElementsByClassName ("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyZFQBhINHJrQporC7Xwg0vxHtXKUO0cPEqapURAE-m9-vKpgb8QtYLSl1azWt9dhC4/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg =document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML= "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML=''
+
+        },5000)
+        form.reset()
+  })
+      .catch(error => console.error('Error!', error.message))
+  })
+function showsidebar(){
+    const sidebar =document.querySelector('.sidebar')
+    sidebar.style.display='flex'
+}
+function hideSidebar(){
+     const sidebar =document.querySelector('.sidebar')
+    sidebar.style.display='none'
+}
+ 
+</script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed(".auto-type",
+        {
+            strings :["Programmer", "IT Supporter", "Web Developer", "Graphic Designer"],
+            typeSpeed:150,
+            backSpeed:150,
+            looped:true,
+        }
+    )
+</script>
+</body>
+</html>
