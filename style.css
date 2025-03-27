@@ -27,7 +27,7 @@ nav{
     justify-content: space-between;
     padding: 10px 0;
     z-index: 1;
-    position:0;
+    position:fixed;
     top: -50;
     left: 0;
     overflow-x: hidden;
