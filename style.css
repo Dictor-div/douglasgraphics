@@ -221,6 +221,8 @@ flex-basis: 35%;
  color:#fff;
  border-color: #e21212c4;
  background-position-x: 100%;
+ margin-top: 10%;
+ margin-left: 10%;
 
 }
 .about-col-2{
@@ -229,6 +231,8 @@ flex-basis: 60%;
 }
 .about-col-2 h2{
     font-family: Segoe Script;
+    color: #2ddf0e;
+    stroke: #2ddf0e;
 }
 .sub-title{
     font-size: 60px;
@@ -425,6 +429,8 @@ flex-basis: 35%;
 background-color:black;
 margin-left: 3rem;
 color: #fff;
+margin-top: 10%;
+
 
 
 }
@@ -432,6 +438,7 @@ color: #fff;
 .contact-right{
     flex-basis: 60%;
     background-color: black;
+    margin-top: 10%;
   
   
     
